@@ -95,4 +95,47 @@ const firstHighScore = scores.find((score) => {
     return score > 50;
 })
 
-console.log(firstHighScore);
+//console.log(firstHighScore);
+
+
+// SORT METHOD
+//example 1 - sorting strings
+const names = ['mario', 'shaun', 'chun-li', 'yoshi', 'luigi'];
+
+// names.sort();
+// names.reverse();
+// console.log(names);
+
+//example 2 - sorting numbers
+const score = [10,50,20,5,35,70,45]
+// score.reverse();
+// console.log(score);
+score.sort((a,b) => {
+    return b - a; //changing to a-b sorts it in the other order
+})
+console.log(score);
+
+//example 3 - sorting objects
+const players = [
+    {name: 'mario', score: 20},
+    {name: 'luigi', score: 10},
+    {name: 'chun-li', score: 50},
+    {name: 'yoshi', score: 30},
+    {name: 'shaun', score: 70}
+];
+
+// players.sort((a,b) => {
+//     if(a.score > b.score){
+//         return -1;
+//     } else if(b.score > a.score){
+//         return 1;
+//     } else{
+//         return 0; 
+//     }
+// });
+
+players.sort((a,b) => {
+    return b.score - a.score;
+})
+
+console.log(players)
