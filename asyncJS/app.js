@@ -1,10 +1,14 @@
 //to make request, we first create a request object
+//xml represent an old data formart but it now works 
+
 const request = new XMLHttpRequest();
 
-request.open('GET', )
+request.addEventListener('readystatechange', () => {
+    console.log(request, request.readyState)
+    if(request.readyState === 4){
+        console.log(request.responseText)
+    }
+})
 
-
-// Javascript is synchronous by nature allowing the execution 
-// of only a single statement at a time
-// Through asynchrounous JS, the browser takes a request and handles it outside 
-// of  the scope of the single thread allowing other tasks to go on
+request.open('GET', 'https://jsonplaceholder.typicode.com/todos/');
+request.send();
