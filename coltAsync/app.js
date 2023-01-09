@@ -11,3 +11,9 @@ console.log("I AT THE END OF THE FILE!");
 //the to the web api 
 //browsers are written in languages such as C++ and can do what 
 //javascript can't. That is why they can support multithreading
+
+//This is more comments on this post
+// I will make a timetable tomorrow and have a more structured day
+//where I target one technical article a day instead of overwhelming
+//myself Then I'll ensure I limit my smartphone use and implement the pomodoro
+//technique
