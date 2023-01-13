@@ -10,3 +10,5 @@ console.log("I AT THE END OF THE FILE!");
 
 //Jan 11 spent over 4 hours trying to solve and error on Linux, still didn't
 //work but I am hopeful I will resolve it tomorrow whe nI am fresh
+
+//wasted Friday but still wanted to commit, I'll make up for it tomorrow
