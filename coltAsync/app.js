@@ -5,3 +5,4 @@ setTimeout(() => {
 }, 3000);
 console.log("I AT THE END OF THE FILE!");
  //again I couldn't concentrate
+ //tomorrow I will go through async javascript
