@@ -7,9 +7,7 @@ setTimeout(() => {
 }, 3000);
 console.log("I AT THE END OF THE FILE!");
 
-//covered two vidoes on promises on udemy
-//promises make codes less deeply nested through promise chaining
-//the trick in making promise chaining work is returning a promise 
-//within our callback then we have one catch statement to handle
-//al the rejected requests
-
+//creating our own promises
+new Promise((resolve, reject) => {
+    resolve();
+})
