@@ -18,3 +18,7 @@ sing()
         console.log("OH NO, PROMISE REJECTED!");
         console.log(err);
     })
+
+    // I covered http requests and query strings.
+    // in total I went through about 5 udemy videos but did not have
+    // to write ny piece of code
