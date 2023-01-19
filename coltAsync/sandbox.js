@@ -22,3 +22,6 @@ sing()
     // I covered http requests and query strings.
     // in total I went through about 5 udemy videos but did not have
     // to write ny piece of code
+
+    //I had a weird sleeping cycle today and worked on a technical article on
+    //SMTP and IMAP for a job application I am handling
