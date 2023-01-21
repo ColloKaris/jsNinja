@@ -18,5 +18,18 @@ const getStarWarsPerson = async (id) => {
     
 }
 
-getStarWarsPerson(2);
-getStarWarsPerson(6);
+
+const jokes = document.querySelector('#jokes')
+const getDadJoke = async () => {
+    const config = {headers: {Accept: 'application/json'}};
+    const res = await axios.get('https://icanhazdadjoke.com/', config);
+    //console.log(res.data);
+    const newLI = document.createElement('li');
+    newLI.append(res.data.joke);
+    jokes.append(newLI)
+}
+
+const button = document.querySelector('button')
+button.addEventListener('click', () => {
+    getDadJoke();
+})
