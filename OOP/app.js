@@ -22,13 +22,21 @@ class User {
         console.log(`${this.username} has a score of ${this.score}`);
         return this;
     }
+}
 
+class Admin extends User{
+ deleteUser(user){
+    users = users.filter((u)=>{
+        return u.username !== user.username;
+    })
+ }
 }
 
 const userOne = new User('mario', 'mario@gmail.com');
 const userTwo = new User('luigi', 'luigi@gmail.com');
-console.log(userOne);
-console.log(userTwo);
+const userThree = new Admin('Collins', 'collins@gmail.com');
+
+console.log(userOne, userTwo, userThree);
 
 // userOne.logout();
 // userTwo.login();
@@ -38,3 +46,10 @@ console.log(userTwo);
 
 //METHOD CHAINING
 userOne.login().incScore().incScore().logout();
+
+//array of users
+let users = [userOne,userTwo, userThree];
+console.log(users);
+
+userThree.deleteUser(userTwo);
+console.log(users);
